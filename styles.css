@@ -1,0 +1,41 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Lato', sans-serif;
+}
+
+img {
+      width: 40px;
+}
+
+/* Stylisation HEADER */
+
+.buttonNewGame {
+      display: block;
+      margin: auto;
+      margin-top: 50px;
+}
+
+.newGame {
+      width: 250px;
+      display: flex;
+}
+
+/* Stylisation Partie Principal */
+
+.mainGame {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-evenly;
+}
+
+.playerStyle {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+}
+
+.score {
+      font-size: 30px
+}
