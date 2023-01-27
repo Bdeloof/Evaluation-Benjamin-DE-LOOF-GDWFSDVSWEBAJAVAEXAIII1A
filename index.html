@@ -15,7 +15,7 @@
 </head>
 <body>
       <header>
-            <button class="buttonNewGame">
+            <button class="buttonNewGame" type="button">
                   <div class="newGame">
                         <img src="./Images/add.png" alt="Image pour créer nouvelle partie">
                         <h1>Nouvelle partie !</h1>
@@ -30,32 +30,34 @@
                               <H2>Joueur 1</H2>
                               <p>Score</p>
                         </div>
-                        <div>
+                        <div class="scoreEnCours">
                               <p>Score en cours</p>
-                              <p>0</p>
+                              <p class="scoreEnCoursBlanc">0</p>
                         </div>
                   </div>
       
-                  <div>
-                        <img src="./Images/Dice/dice-1.png" alt="Image Dé numéro 1">
-                        <div>
-                              <img src="./Images/synchroniser.png" alt="Image lancé de dé">
-                              <p>Lancez le dé</p>
-                        </div>
-                        <div>
-                              <img src="./Images/verifier.png" alt="Image pour valider le score">
-                              <p>Validez !</p>
+                  <div class="mainCentral">
+                        <img class="diceOne" src="./Images/Dice/dice-1.png" alt="Image Dé numéro 1">
+                        <div class="boutonJeu">
+                              <button class="boutonLancerDe" type="button">
+                                    <img src="./Images/synchroniser.png" alt="Image lancé de dé">
+                                    <p>Lancez le dé</p>
+                              </button>
+                              <button class="boutonLancerDe valider" type="button">
+                                    <img src="./Images/verifier.png" alt="Image pour valider le score">
+                                    <p>Validez !</p>
+                              </button>
                         </div>
                   </div>
       
                   <div class="playerStyle">
                         <div class="score">
-                              <H2>Joueur 1</H2>
+                              <H2>Joueur 2</H2>
                               <p>Score</p>
                         </div>
-                        <div>
+                        <div class="scoreEnCours">
                               <p>Score en cours</p>
-                              <p>0</p>
+                              <p class="scoreEnCoursBlanc">0</p>
                         </div>
                   </div>
             </div>
