@@ -10,59 +10,44 @@
 
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+
       <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-      <header>
-            <button class="buttonNewGame" type="button">
-                  <div class="newGame">
-                        <img src="./Images/add.png" alt="Image pour créer nouvelle partie">
-                        <h1>Nouvelle partie !</h1>
-                  </div>
-            </button>
-      </header>
+      <h1 class="titre-site">Qui arrivera en premier à 100 ?</h1>
 
-      <main>
-            <div class="mainGame">
-                  <div class="playerStyle">
-                        <div class="score">
-                              <H2>Joueur 1</H2>
-                              <p>Score</p>
-                        </div>
-                        <div class="scoreEnCours">
-                              <p>Score en cours</p>
-                              <p class="scoreEnCoursBlanc">0</p>
-                        </div>
-                  </div>
-      
-                  <div class="mainCentral">
-                        <img class="diceOne" src="./Images/Dice/dice-1.png" alt="Image Dé numéro 1">
-                        <div class="boutonJeu">
-                              <button class="boutonLancerDe" type="button">
-                                    <img src="./Images/synchroniser.png" alt="Image lancé de dé">
-                                    <p>Lancez le dé</p>
-                              </button>
-                              <button class="boutonLancerDe valider" type="button">
-                                    <img src="./Images/verifier.png" alt="Image pour valider le score">
-                                    <p>Validez !</p>
-                              </button>
-                        </div>
-                  </div>
-      
-                  <div class="playerStyle">
-                        <div class="score">
-                              <H2>Joueur 2</H2>
-                              <p>Score</p>
-                        </div>
-                        <div class="scoreEnCours">
-                              <p>Score en cours</p>
-                              <p class="scoreEnCoursBlanc">0</p>
-                        </div>
+      <div class="game-background">
+            <!-- Ajout de l'image du Dé -->
+            <img class="dice" src="./Images/dice-2.png" alt="image du dé numéro 2">
+
+            <!-- Ajout des boutons NewGame / RollDice / Validate -->
+            <button class="new-game"><img src="./Images/add.png" alt="image nouvelle partie">Nouvelle partie</button>
+            <button class="roll-dice"><img src="./Images/synchroniser.png" alt="image lancer de dé">Lancez le dé</button>
+            <button class="validate"><img src="./Images/verifier.png" alt="image valider les points">Validez les points</button>
+
+            <!-- Ecriture Joueur 1 -->
+            <div class="player-1 active">
+                  <div class="player-name" id="name-1">Joueur 1</div>
+                  <div class="player-score" id="score-1">50</div>
+                  <div class="player-box-score">
+                        <p class="player-current-score">Score en cours</p>
+                        <p id="ongoing-1" class="player-number-score-1">11</p>
                   </div>
             </div>
-      </main>
 
+            <!-- Ecriture Joueur 2 -->
+            <div class="player-2">
+                  <div class="player-name" id="name-2">Joueur 2</div>
+                  <div class="player-score" id="score-2">75</div>
+                  <div class="player-box-score">
+                        <p class="player-current-score">Score en cours</p>
+                        <p id="ongoing-2" class="player-number-score-2">22</p>
+                  </div>
+            </div>
+      </div>
+
+      <!-- Importation fichier JS pour le jeu -->
       <script src="./script.js"></script>
 </body>
 </html>
